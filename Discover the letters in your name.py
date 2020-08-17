@@ -56,6 +56,7 @@ lastName = "from the Fourth Kingdom"
 wannaFindOut()
 
 firstName, lastName = names()
+
 name = firstName + " " + lastName
 
 lenghtOfName = counting()
