@@ -1,5 +1,5 @@
 vorname = "Teresa" 
-nachname = "Angelopoulos"
+nachname = "Ang"
 
 laengevor = len(vorname) 
 laengenach = len(nachname)
