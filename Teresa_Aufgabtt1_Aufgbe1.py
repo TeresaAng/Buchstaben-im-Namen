@@ -42,29 +42,23 @@ def lettersInYourName():
     vocals = ["a", "e", "i", "o", "u"]
     randomNumber = random.randint(0,lenghtOfName) % 5
     letterInTheName = vocals[randomNumber] in name
-    print(letterInTheName)
+    print("\nThe random number ", randomNumber, " in the vocals-list is the letter '", 
+          vocals[randomNumber], "' and this letter is in your name: ", 
+          letterInTheName, "\n", sep="")
+    for i in range(0,5):
+        exist = vocals[i] in name   # Vorkommen
+        print("The vocal '",  vocals[i], "' is in your name: ", exist, ".", sep="")
+
     
 firstName = "Snow White"
 lastName = "from the Fourth Kingdom"
+
+wannaFindOut()
+
+firstName, lastName = names()
 name = firstName + " " + lastName
-
-#wannaFindOut() #???
-
-#firstName, lastName = names() #???
 
 lenghtOfName = counting()
 
 lettersInYourName()
 
-##############################################################################
-"""
-vorkommen = vokale[stelle-1] in vokale 
-print("Der ", stelle, ". Vokal in der Liste ist '", vokale[stelle-1],
-      "' und er kommt in meinem Namen vor: ", vorkommen, ".", sep="")
-
-i = 0
-for i in range(0,5):
-    vork = vokale[i] in name   # Vorkommen
-    print("Der Vokal '",  vokale[i], "' kommt in meinem Namen vor: ", vork, ".", sep="")
-    
-"""
